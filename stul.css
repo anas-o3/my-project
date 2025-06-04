@@ -1,72 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+}
 :root{
   --primary-color:black;
   --secondary-color:#018DB0;
    --bg--primary:#D9D9D9;
+   --bg--secondary  :#FFFFFF;
+
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-
-
 body{
-font-family: "Poppins", sans-serif;
-
-}
-
-
-
-h1,h2{
-    font-family: "Saira", sans-serif;
-
-}
-ul{
-list-style: none;
-
-}
-a{
- text-decoration: none; 
-}
-/* headar start*/
-
-header{
-background-color: white;
-height:100vh ;
-padding: 1.5rem 2rem;
-
-}
-header.navbar{
-
-background-color: white;
-
-
-}
-header .navbar nav{
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 1200px;
-}
-header .navbar nav ul{
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-}
-header .navbar nav ul a{
-margin: 0 35px;
+background:var(--bg--secondary);
 color: var(--primary-color);
-font-weight: 400;
+
 }
- #home #logo{
-color: var(--primary-color);
-font-size: 25px;
-font-weight: 900;
-
-
+section{
+min-height: 100vh;
+padding: 10rem 9% 3rem;
+}
+/*header section code */
+ .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 10;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    padding-right: 50px;
  }
-/* headar end*/
+.logo{
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 30px;
+}
+.logo:hover{
+  transform: scale(1.05);
+}
+.navbar a{
+    
+      font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.navbar a:hover ,
+ .navbar a.actve{
+color: var(--secondary-color);
+}
