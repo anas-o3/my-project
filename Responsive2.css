@@ -1,0 +1,370 @@
+/* ======================================================= */
+/* ====== أكواد التجاوب مع iPad Air أفقي (820px) ====== */
+/* ======================================================= */
+
+@media (max-width: 820px) {
+  .menu-icon-label {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 3%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+  }
+  #menu-toggle:checked ~ nav {
+    left: 0;
+  }
+  header nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+  }
+  .Home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 10rem;
+    margin-left: 2rem;
+  }
+  .conten-box {
+    width: 100%;
+    order: 2;
+    align-items: center;
+  }
+  .text-box {
+    align-items: center;
+  }
+  .text-box p {
+    margin-top: 1.5rem;
+  }
+  .social-icons {
+    display: flex;
+    margin-bottom: 4rem;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .imga {
+    order: 1;
+    object-fit: cover;
+    background-color: #e0f7fa;
+  }
+  .services-container {
+    justify-content: center;
+  }
+  .services-container .services-box {
+    flex: 1 1 45%;
+    max-width: 35rem;
+  }
+  .project-gallery {
+    gap: 2rem;
+  }
+}
+/* ======================================================= */
+/* ====== أكواد التجاوب مع التابلت والموبايل (768px) ====== */
+/* ======================================================= */
+@media (max-width: 768px) {
+  .menu-icon-label {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 3%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+  }
+
+  #menu-toggle:checked ~ nav {
+    left: 0;
+  }
+
+  header nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+  }
+  .Home {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    margin-left: 0.5rem;
+
+    padding-top: 12rem;
+  }
+  .conten-box {
+    width: 100%;
+    order: 2;
+    align-items: center;
+  }
+  .text-box {
+    align-items: center;
+  }
+  .imga {
+    order: 1;
+    width: 70vw;
+  }
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about-content {
+    width: 100%;
+    align-items: center;
+  }
+  .about-img img {
+    width: 70vw;
+    margin: 0 auto 3rem;
+  }
+  .about-buttons {
+    justify-content: center;
+  }
+  .services-container .services-box {
+    width: 100%;
+    max-width: 40rem;
+    flex: 1 1 100%;
+  }
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .project-gallery .image-box {
+    width: 100%;
+    margin: 0;
+  }
+  .project-gallery .image-box:nth-child(5) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 48%;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+  .contact-form .btn {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+  }
+}
+/* ======================================================= */
+/* ====== أكواد التجاوب مع الموبايل الكبير (600px) ====== */
+/* ======================================================= */
+@media (max-width: 600px) {
+  html {
+    font-size: 52%;
+  }
+  section {
+    padding: 8rem 5% 2rem;
+  }
+  .text-box {
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .imga {
+    margin-left: 2rem;
+  }
+  .about-img img {
+    width: 70vw;
+    margin-right: 2rem;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .project-gallery .image-box {
+    width: 500px;
+    margin: 0;
+    height: 300px;
+    margin-left: 2.3rem;
+  }
+  .project-gallery .image-box:nth-child(5) {
+    width: 500px;
+    margin: 0;
+    height: 300px;
+  }
+  .text-overlay p {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .footer-nav,
+  .footer-social {
+    gap: 3rem;
+  }
+}
+/* ======================================================= */
+/* ====== أكواد التجاوب مع الموبايل المتوسط (480px) ====== */
+/* ======================================================= */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  .about-content h2 {
+    font-size: 4.5rem;
+  }
+
+  .services-box i {
+    font-size: 4rem;
+    padding: 2rem 0;
+  }
+  .services-box h3 {
+    font-size: 2.2rem;
+  }
+  .services-box p {
+    font-size: 1.8rem;
+  }
+  .project-gallery .image-box {
+    width: 450px;
+    margin: 0;
+    height: 300px;
+    margin-left: 3rem;
+  }
+  .project-gallery .image-box:nth-child(5) {
+    width: 450px;
+    margin: 0;
+    height: 300px;
+    margin-left: 3rem;
+  }
+  .input-field-wrapper {
+    padding: 1.8rem 2rem;
+  }
+  .footer-nav,
+  .footer-social {
+    gap: 2rem;
+  }
+}
+/* ======================================================= */
+/* ====== أكواد التجاوب مع الموبايل الصغير (425px) ====== */
+/* ======================================================= */
+
+@media (max-width: 430px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .text-box h1 {
+    font-size: 4.8rem;
+  }
+  .imga {
+    margin-left: 1rem;
+  }
+  .project-gallery {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .project-gallery .image-box {
+    width: 90%;
+    max-width: 40rem;
+    margin: 0;
+    height: 200px;
+  }
+  .text-overlay p {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .project-gallery .image-box:last-child {
+    width: 90%;
+    max-width: 40rem;
+    margin: 0;
+    height: 200px;
+  }
+  .text-overlay p {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .btn {
+    padding: 1rem 2.2rem;
+    font-size: 1.6rem;
+  }
+  .about-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons .icon-link {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+}
+/* ======================================================= */
+/* ====== أكواد التجاوب مع iPhone القياسي (375px) ====== */
+/* ======================================================= */
+
+@media (max-width: 375px) {
+  html {
+    font-size: 48%;
+  }
+  section {
+    padding: 8rem 4% 2rem;
+  }
+  .imga {
+    margin-left: 1rem;
+  }
+  .text-box h3 {
+    font-size: 2.8rem;
+  }
+  .text-box h1 {
+    font-size: 4.5rem;
+  }
+  .about-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-form {
+    gap: 1.5rem;
+  }
+  .input-field-wrapper {
+    padding: 1.6rem 1.8rem;
+  }
+  .textarea-group {
+    height: 14rem;
+  }
+}
+/* ======================================================= */
+/* ====== أكواد التجاوب مع أصغر الشاشات (320px) ====== */
+/* ======================================================= */
+
+@media (max-width: 320px) {
+  section {
+    padding: 6rem 3% 2rem;
+  }
+  .text-box h1 {
+    font-size: 4.2rem;
+    line-height: 1.2;
+  }
+  .skill-item {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.5rem;
+  }
+  .projects .heading {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+  .footer-nav,
+  .footer-social {
+    gap: 1.5rem;
+  }
+}
