@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  border: none;
+  scroll-behavior: smooth;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+.Home {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10rem 9% 2rem;
+  font-family: "inter", sans-serif;
+}
+header {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+  z-index: 1000;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+header nav a {
+  margin-left: 100px;
+  color: black;
+  font-size: 1.9rem;
+  transition: 0.3s;
+  font-weight: 300;
+}
+header nav a:hover {
+  color: #018db0;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-icon-label {
+  font-size: 3.6rem;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+.conten-box {
+  width: 50%;
+  color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.text-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.text-box h3 {
+  font-size: 3.2rem;
+  margin: 5px;
+}
+.text-box h1 {
+  font-size: 5.5rem;
+}
+.text-box .skills {
+  color: #018db0;
+  display: block;
+  margin: 1rem 0;
+}
+.text-box p {
+  font-size: 1.8rem;
+  color: #555;
+  margin-top: 3rem;
+  line-height: 1.6;
+}
+.social-icons {
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.social-icons .icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #018db0;
+  border: 2px solid #018db0;
+  border-radius: 50%;
+  color: white;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+}
+.social-icons .icon-link:hover {
+  background-color: white;
+  border-color: #018db0;
+  color: #018db0;
+  transform: translateY(-5px);
+}
+.imga {
+  width: 45%;
+  max-width: 500px;
+  object-fit: contain;
+}
+.btn-box {
+  display: flex;
+}
+.btn {
+  position: relative;
+  padding: 1.2rem 2.8rem;
+  font-size: 1.8rem;
+  background: #018db0;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  font-weight: 600;
+  color: white;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 0.8rem;
+}
+.btn:hover::before {
+  transform: scaleX(1);
+}
+/* ======================================================= */
+/* ===                      قسم about                  === */
+/* ======================================================= */
+.about {
+  min-height: 100vh;
+  display: flex;
+  gap: 4rem;
+  background: #dfdfdf;
+}
+.about-img img {
+  width: 35vw;
+  max-width: 450px;
+}
+.heading {
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.hh3 {
+  color: #018db0;
+}
+.about-content {
+  width: auto;
+  flex: 1;
+}
+.about-content h2 {
+  font-size: 5.5rem;
+
+  text-align: center;
+}
+.about-content h3 {
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+.about-content p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin: 0 0 5rem 0;
+}
+
+.skills-section h4 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.skill-item {
+  background-color: white;
+  padding: 1rem 1.8rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.skill-item:hover {
+  border-color: #018db0;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.skill-item i {
+  color: #018db0;
+  font-size: 2rem;
+}
+.about-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+
+.btn {
+  display: inline-block;
+}
+.btn.btn-outline {
+  background: transparent;
+  color: #018db0;
+  border: 2px solid #018db0;
+}
+.btn.btn-outline:hover {
+  background: #018db0;
+  color: white;
+}
+/* ======================================================= */
+/* ===          قسم services                                === */
+/* ======================================================= */
+.services h2 {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.services-container .services-box {
+  width: 400px;
+  height: 430px;
+  flex: 1 1 30rem;
+  background: #dfdfdf;
+
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.3rem;
+  transition: 0.3s ease;
+}
+.services-container .services-box:hover {
+  border: 0.5rem solid;
+  border-color: #018db0;
+  transform: scale(1.02);
+}
+.services-box i {
+  font-size: 5rem;
+  padding: 50px;
+}
+.services-box h3 {
+  font-size: 2.6rem;
+  margin-top: 1rem;
+  padding: 15px;
+}
+.services-box p {
+  font-size: 20px;
+  text-wrap-style: balance;
+}
+/* ======================================================= */
+/* ===            قسم  projects                              === */
+/* ======================================================= */
+.projects {
+  background: #dfdfdf;
+}
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-box {
+  position: relative;
+  width: 530px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 94%;
+  background: linear-gradient(to top, rgba(1, 141, 176, 0.6), transparent 90%);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+.image-box:hover .text-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+.text-overlay h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.text-overlay p {
+  font-size: 20px;
+  line-height: 1.4;
+
+  text-align: center;
+}
