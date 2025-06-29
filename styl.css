@@ -196,24 +196,46 @@ body.dark header nav a:hover {
   color: #018db0;
 }
 
+
 body.dark .Home,
 body.dark .about,
 body.dark .services,
 body.dark .projects,
-body.dark .contact {
+body.dark .contact,
+body.dark .footer {
   background-color: #1e1e1e;
   color: #f0f0f0;
 }
-
+body.dark .Home .conten-box {
+  color: #f0f0f0;
+  background-color: #1e1e1e;
+}
 body.dark .skill-item {
   background-color: #2a2a2a;
-  border-color: #018db0;
+  color: #f0f0f0;
 }
 
+body.dark .footer-nav a {
+  color: #f0f0f0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+body.dark .footer-nav a:hover {
+  color: #018db0;
+}
+body.dark .skills-section h4 {
+  color: #f0f0f0;
+}
 body.dark .social-icons .icon-link {
   background-color: #018db0;
   color: #fff;
 }
+body.dark .social-icons .icon-link:hover {
+  background-color: #fff;
+  color: #018db0;
+}
+
+
 
 body.dark .text-box p,
 body.dark .about-content p,
@@ -228,6 +250,11 @@ body.dark .services-box {
 
 body.dark .projects .image-box {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+body.dark .projects .text-overlay {
+  background: linear-gradient(to top, rgba(1, 141, 176, 0.6), transparent 90%);
+  color: #f0f0f0;
+  border-color: #f0f0f0;
 }
 
 /* ======================================================= */

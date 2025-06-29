@@ -28,7 +28,12 @@ var typed = new Typed('.hh3', {
     });
 
 let darkToggle = document.querySelector("#dark-toggle");
-
 darkToggle.addEventListener("change", () => {
-    document.body.classList.toggle("dark", darkToggle.checked);
-});
+    if (darkToggle.checked) {
+        document.body.classList.add("dark");
+        localStorage.setItem("dark-mode", "enabled");
+    } else {
+        document.body.classList.remove("dark");
+        localStorage.setItem("dark-mode", "disabled");
+    }
+}); 
