@@ -11,3 +11,24 @@ if (menu.checked) {
     navbar.classList.remove("active");
 }
 });
+
+window.addEventListener("scroll", () => {
+    menu.checked = false;
+    label.classList.remove("bx-x");
+    navbar.classList.remove("active");
+});
+var typed = new Typed('.hh3', {
+    strings: ['Web Developer', 'UI/UX Designer', 'Front-End Developer' ],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1400,
+    loop: true,
+
+
+    });
+
+let darkToggle = document.querySelector("#dark-toggle");
+
+darkToggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark", darkToggle.checked);
+});
