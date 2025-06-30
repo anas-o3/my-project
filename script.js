@@ -28,12 +28,24 @@ var typed = new Typed('.hh3', {
     });
 
 let darkToggle = document.querySelector("#dark-toggle");
+let darkIcon = document.querySelector(".dark-mode-toggle i");
 darkToggle.addEventListener("change", () => {
     if (darkToggle.checked) {
         document.body.classList.add("dark");
-        localStorage.setItem("dark-mode", "enabled");
-    } else {
+        darkIcon.classList.remove("fa-moon", "fa-regular");
+        darkIcon.classList.add("fa-sun", "fa-solid");
+        localStorage.setItem("dark-mode", "enabled");    
+        } 
+        else {
         document.body.classList.remove("dark");
+        darkIcon.classList.remove("fa-sun", "fa-solid");
+        darkIcon.classList.add("fa-moon", "fa-regular");
         localStorage.setItem("dark-mode", "disabled");
     }
 }); 
+if (localStorage.getItem("dark-mode") === "enabled") {
+    document.body.classList.add("dark");
+    darkToggle.checked = true;
+    darkIcon.classList.remove("fa-moon", "fa-regular");
+    darkIcon.classList.add("fa-sun", "fa-solid");
+}
