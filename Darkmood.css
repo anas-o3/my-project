@@ -5,38 +5,36 @@
     gap: 0.5rem;
     font-size: 2.2rem;
 }
+.dark-mode-toggle i {
 
+    transition: color 0.3s ease;
+
+}
+.dark-mode-toggle input:checked + i {
+    color: #f0f0f0; /* Dark mode icon color */
+}
 .dark-mode-toggle input {
     display: none;
 }
-
 .moon-icon {
     cursor: pointer;
 }
-
 body.dark {
     background-color: #121212;
     color: #f0f0f0;
 }
-
 body.dark header {
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.85);
 }
-
 body.dark header h1 {
     color: #f0f0f0;
 }
-
 body.dark header nav a {
     color: #f0f0f0;
 }
-
 body.dark header nav a:hover {
     color: #018db0;
 }
-
-
 body.dark .Home,
 body.dark .about,
 body.dark .services,
@@ -79,7 +77,6 @@ body.dark .about-content p,
 body.dark .services-box p {
     color: #ccc;
 }
-
 body.dark .services-box {
     background-color: #2a2a2a;
     color: #fff;

@@ -1,7 +1,6 @@
 /* ======================================================= */
 /* ===                 قسم contact                    === */
 /* ======================================================= */
-
 .contact {
   background: #dfdfdf;
 }
@@ -104,7 +103,6 @@
 /* ======================================================= */
 /* ===                 قسم footer                    === */
 /* ======================================================= */
-
 .footer {
   background-color: white;
   padding: 4rem 9% 2rem;
@@ -123,13 +121,11 @@
   object-fit: contain;
   margin-right: 3.5rem;
   border-radius: 30%;
-
 }
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10rem;
 }
 .footer-nav a {
   color: #000;

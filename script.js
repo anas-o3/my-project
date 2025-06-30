@@ -23,10 +23,7 @@ var typed = new Typed('.hh3', {
     backSpeed: 100,
     backDelay: 1400,
     loop: true,
-
-
     });
-
 let darkToggle = document.querySelector("#dark-toggle");
 let darkIcon = document.querySelector(".dark-mode-toggle i");
 darkToggle.addEventListener("change", () => {
@@ -43,9 +40,3 @@ darkToggle.addEventListener("change", () => {
         localStorage.setItem("dark-mode", "disabled");
     }
 }); 
-if (localStorage.getItem("dark-mode") === "enabled") {
-    document.body.classList.add("dark");
-    darkToggle.checked = true;
-    darkIcon.classList.remove("fa-moon", "fa-regular");
-    darkIcon.classList.add("fa-sun", "fa-solid");
-}
