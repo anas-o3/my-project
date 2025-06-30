@@ -12,7 +12,6 @@
     left: -100%;
     width: 100%;
     padding: 1rem 3%;
-    background:  #555;
     backdrop-filter: blur(10px);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -56,7 +55,6 @@
   .imga {
     order: 1;
     object-fit: cover;
-    background-color: #e0f7fa;
   }
   .services-container {
     justify-content: center;
@@ -82,7 +80,6 @@
     left: -100%;
     width: 100%;
     padding: 1rem 3%;
-    background:  #555;
     backdrop-filter: blur(10px);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
